@@ -1,0 +1,288 @@
+<!-- NOMBRE: NAVA GUTIERREZ DIANA PAOLA -->
+<!-- ELABORADO: 02 DE OCTUBRE DE 2026 -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorando la Inteligencia Artificial</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <p class="etiqueta">TECNOLOGÍA E INNOVACIÓN</p>
+
+        <h1>Explorando la Inteligencia Artificial</h1>
+
+        <p class="introduccion">
+            Conoce tres herramientas de inteligencia artificial,
+            sus principales fortalezas y algunos de sus modelos.
+        </p>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="inicio">
+
+        <!-- Contenedor de las tarjetas -->
+        <section class="contenedor-ias">
+
+
+            <!-- TARJETA CLAUDE -->
+            <article class="tarjeta">
+
+                <div class="logo">
+                    <img src="img/cloude.png" alt="Logo de Claude">
+                </div>
+
+                <h2>Claude</h2>
+
+                <p class="descripcion">
+                    Inteligencia artificial enfocada en el análisis,
+                    redacción y comprensión de información.
+                </p>
+
+                <div class="informacion">
+
+                    <h3>Fortalezas</h3>
+
+                    <ul>
+                        <li>Análisis de textos largos.</li>
+                        <li>Apoyo en programación.</li>
+                        <li>Redacción detallada.</li>
+                    </ul>
+
+                    <h3>Modelos</h3>
+
+                    <p>
+                        Haiku: rápido y ligero.<br>
+                        Sonnet: equilibrado.<br>
+                        Opus: mayor capacidad.
+                    </p>
+
+                </div>
+
+                <a class="enlace-ia" href="https://claude.ai">
+                    Visitar Claude
+                </a>
+
+            </article>
+
+
+            <!-- TARJETA CHATGPT -->
+            <article class="tarjeta">
+
+                <div class="logo">
+                    <img src="img/chat.png" alt="Logo de ChatGPT">
+                </div>
+
+                <h2>ChatGPT</h2>
+
+                <p class="descripcion">
+                    Asistente de inteligencia artificial que puede
+                    apoyar en diferentes tipos de tareas.
+                </p>
+
+                <div class="informacion">
+
+                    <h3>Fortalezas</h3>
+
+                    <ul>
+                        <li>Uso en distintas tareas.</li>
+                        <li>Trabajo con texto, imágenes y voz.</li>
+                        <li>Herramientas integradas.</li>
+                    </ul>
+
+                    <h3>Modelos</h3>
+
+                    <p>
+                        Serie GPT: uso general.<br>
+                        Modelos de razonamiento: tareas complejas.<br>
+                        Versiones ligeras: mayor rapidez.
+                    </p>
+
+                </div>
+
+                <a class="enlace-ia" href="https://chatgpt.com">
+                    Visitar ChatGPT
+                </a>
+
+            </article>
+
+
+            <!-- TARJETA GEMINI -->
+            <article class="tarjeta">
+
+                <div class="logo">
+                    <img src="img/gemini.png" alt="Logo de Gemini">
+                </div>
+
+                <h2>Gemini</h2>
+
+                <p class="descripcion">
+                    Inteligencia artificial integrada con diferentes
+                    herramientas y servicios de Google.
+                </p>
+
+                <div class="informacion">
+
+                    <h3>Fortalezas</h3>
+
+                    <ul>
+                        <li>Integración con Google.</li>
+                        <li>Contenido multimedia.</li>
+                        <li>Consulta de información actual.</li>
+                    </ul>
+
+                    <h3>Modelos</h3>
+
+                    <p>
+                        Flash: rápido y eficiente.<br>
+                        Pro: mayor capacidad.<br>
+                        Nano: funciona en dispositivos.
+                    </p>
+
+                </div>
+
+                <a class="enlace-ia" href="https://gemini.google.com">
+                    Visitar Gemini
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <!-- SECCIÓN PARA IR AL FORMULARIO -->
+        <section class="mas-informacion">
+
+            <h2>¿Quieres conocer más?</h2>
+
+            <p>
+                Puedes enviarnos tu pregunta utilizando
+                el siguiente formulario.
+            </p>
+
+            <a class="boton-principal" href="#formulario">
+                Ir al formulario
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FORMULARIO -->
+    <section id="formulario">
+
+        <div class="formulario-contenedor">
+
+            <p class="etiqueta">CONTACTO</p>
+
+            <h2>Solicita más información</h2>
+
+            <p>
+                Escribe tus datos y dinos qué te gustaría
+                conocer sobre inteligencia artificial.
+            </p>
+
+
+            <form onsubmit="alert('Información enviada'); return false;">
+
+                <!-- Nombre -->
+                <label for="nombre">Nombre</label>
+
+                <input type="text"
+                       id="nombre"
+                       name="nombre"
+                       placeholder="Escribe tu nombre"
+                       required>
+
+
+                <!-- Correo -->
+                <label for="correo">Correo electrónico</label>
+
+                <input type="email"
+                       id="correo"
+                       name="correo"
+                       placeholder="ejemplo@correo.com"
+                       required>
+
+
+                <!-- Tema -->
+                <label for="tema">IA de tu interés</label>
+
+                <select id="tema" name="tema">
+
+                    <option value="claude">Claude</option>
+
+                    <option value="chatgpt">ChatGPT</option>
+
+                    <option value="gemini">Gemini</option>
+
+                </select>
+
+
+                <!-- Pregunta -->
+                <label for="mensaje">
+                    ¿Qué información necesitas?
+                </label>
+
+                <textarea id="mensaje"
+                          name="mensaje"
+                          placeholder="Escribe aquí tu pregunta..."
+                          required></textarea>
+
+
+                <!-- Botones -->
+                <div class="acciones">
+
+                    <a class="boton-secundario" href="#inicio">
+                        Regresar
+                    </a>
+
+                    <button type="submit">
+                        Enviar información
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            Práctica realizada por
+            <strong>Nava Gutierrez Diana Paola</strong>
+        </p>
+
+        <p>2026</p>
+
+    </footer>
+
+</body>
+
+</html>

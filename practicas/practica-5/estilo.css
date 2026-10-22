@@ -1,0 +1,403 @@
+/* NOMBRE: NAVA GUTIERREZ DIANA PAOLA */
+/* ELABORADO: 02 DE OCTUBRE DE 2026 */
+
+
+/* =========================
+   ESTILO GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #343b38;
+    background-color: #f5f3ed;
+}
+
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
+header {
+    text-align: center;
+    padding: 60px 20px 45px;
+    background-color: #dce5dc;
+    border-bottom: 4px solid #8da58f;
+}
+
+
+    header h1 {
+        max-width: 750px;
+        margin: 10px auto;
+        font-family: "Playfair Display", serif;
+        font-size: 45px;
+        color: #344b3c;
+    }
+
+
+.etiqueta {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #6c806e;
+}
+
+
+.introduccion {
+    max-width: 650px;
+    margin: 15px auto 0;
+    line-height: 1.6;
+    color: #56605a;
+}
+
+
+/* =========================
+   CONTENIDO
+   ========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+
+/* CONTENEDOR DE LAS 3 IA */
+
+.contenedor-ias {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================
+   TARJETAS
+   ========================= */
+
+.tarjeta {
+    width: 320px;
+    background-color: white;
+    border-top: 6px solid #8da58f;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    .logo img {
+        max-width: 130px;
+        max-height: 90px;
+    }
+
+
+.tarjeta h2 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: #344b3c;
+    font-size: 28px;
+    margin: 15px 0 10px;
+}
+
+
+.descripcion {
+    text-align: center;
+    line-height: 1.5;
+    color: #626963;
+}
+
+
+.informacion {
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+
+    .informacion h3 {
+        color: #637b67;
+        font-size: 16px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #d7ddd7;
+        padding-bottom: 5px;
+    }
+
+
+    .informacion ul {
+        padding-left: 20px;
+        line-height: 1.7;
+    }
+
+
+    .informacion p {
+        line-height: 1.7;
+    }
+
+
+/* =========================
+   ENLACES DE LAS IA
+   ========================= */
+
+.enlace-ia {
+    display: block;
+    margin-top: 20px;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #607963;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+    .enlace-ia:hover {
+        background-color: #455d49;
+    }
+
+
+/* =========================
+   MÁS INFORMACIÓN
+   ========================= */
+
+.mas-informacion {
+    max-width: 700px;
+    margin: 60px auto 10px;
+    text-align: center;
+    padding: 35px;
+    border: 2px dashed #9caf9d;
+    background-color: #eef2ec;
+}
+
+
+    .mas-informacion h2 {
+        font-family: "Playfair Display", serif;
+        color: #344b3c;
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+
+.boton-principal {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background-color: #344b3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+    .boton-principal:hover {
+        background-color: #607963;
+    }
+
+
+/* =========================
+   FORMULARIO
+   ========================= */
+
+#formulario {
+    display: none;
+    min-height: 100vh;
+    padding: 60px 20px;
+    background-color: #e5ebe3;
+}
+
+
+    /* Muestra el formulario */
+    #formulario:target {
+        display: block;
+    }
+
+
+/* Oculta el contenido principal al abrir el formulario */
+body:has(#formulario:target) header,
+body:has(#formulario:target) #inicio {
+    display: none;
+}
+
+
+.formulario-contenedor {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    background-color: white;
+    border-left: 7px solid #78907b;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+    .formulario-contenedor h2 {
+        font-family: "Playfair Display", serif;
+        color: #344b3c;
+        font-size: 32px;
+        margin: 5px 0 10px;
+    }
+
+
+    .formulario-contenedor > p {
+        line-height: 1.6;
+    }
+
+
+/* =========================
+   CAMPOS DEL FORMULARIO
+   ========================= */
+
+form {
+    margin-top: 30px;
+}
+
+
+label {
+    display: block;
+    margin: 18px 0 7px;
+    font-weight: 600;
+    color: #455749;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #343b38;
+    background-color: #fafafa;
+    border: 1px solid #aeb9af;
+    border-radius: 3px;
+}
+
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: 2px solid #a5b8a7;
+        background-color: white;
+    }
+
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+
+/* =========================
+   BOTONES DEL FORMULARIO
+   ========================= */
+
+.acciones {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+button,
+.boton-secundario {
+    padding: 12px 22px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+button {
+    border: none;
+    color: white;
+    background-color: #526c57;
+}
+
+
+    button:hover {
+        background-color: #344b3c;
+    }
+
+
+.boton-secundario {
+    color: #526c57;
+    background-color: white;
+    border: 1px solid #526c57;
+    text-decoration: none;
+}
+
+
+    .boton-secundario:hover {
+        background-color: #eef2ec;
+    }
+
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #344b3c;
+    color: white;
+    font-size: 14px;
+}
+
+
+    footer p {
+        margin: 5px;
+    }
+
+
+/* =========================
+   PANTALLAS PEQUEÑAS
+   ========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 35px;
+    }
+
+
+    .tarjeta {
+        width: 100%;
+    }
+
+
+    .formulario-contenedor {
+        padding: 25px;
+    }
+
+
+    .acciones {
+        flex-direction: column;
+    }
+
+
+    button,
+    .boton-secundario {
+        width: 100%;
+        text-align: center;
+    }
+}

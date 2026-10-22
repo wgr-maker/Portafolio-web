@@ -1,0 +1,124 @@
+<!-- NOMBRE: NAVA GUTIERREZ DIANA PAOLA -->
+<!-- ELABORADO: 02 DE OCTUBRE DE 2026 -->
+
+<head>
+
+    <!-- Carga la letra de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Conecta el archivo de estilos -->
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <!-- Centra todo el contenido -->
+    <center>
+
+        <!-- Títulos de la página -->
+        <h3>FORMULARIO DE REGISTRO</h3>
+        <h2>RESERVACIONES</h2>
+        <h4>NAVA GUTIERREZ DIANA PAOLA</h4>
+
+        <br>
+
+        <!-- Aquí empieza el formulario -->
+        <form>
+
+            <!-- Tabla de 2 columnas -->
+            <table border="0" cellpadding="10" cellspacing="0">
+
+                <!-- Nombre -->
+                <tr>
+                    <td>Ingresa tu nombre:</td>
+                    <td><input type="text" name="nombre"></td>
+                </tr>
+
+                <!-- Apellidos -->
+                <tr>
+                    <td>Ingresa tus apellidos:</td>
+                    <td><input type="text" name="apellidos"></td>
+                </tr>
+
+                <!-- Edad -->
+                <tr>
+                    <td>Ingresa tu edad:</td>
+                    <td><input type="number" name="edad"></td>
+                </tr>
+
+                <!-- Correo -->
+                <tr>
+                    <td>Ingresa tu correo:</td>
+                    <td><input type="email" name="correo"></td>
+                </tr>
+
+                <!-- Género -->
+                <tr>
+                    <td>Ingresa tu género:</td>
+                    <td>
+                        <input type="radio" name="genero" value="masculino"> M
+                        <input type="radio" name="genero" value="femenino"> F
+                    </td>
+                </tr>
+
+                <!-- Temas de interés -->
+                <tr>
+                    <td>Ingresa tema de interés:</td>
+                    <td>
+                        <input type="checkbox" name="pasatiempo" value="computacion">
+                        Computación
+
+                        <input type="checkbox" name="pasatiempo" value="negocios">
+                        Negocios
+
+                        <input type="checkbox" name="pasatiempo" value="juegos">
+                        Juegos
+
+                        <input type="checkbox" name="pasatiempo" value="viajes">
+                        Viajes
+                    </td>
+                </tr>
+
+                <!-- Estado civil -->
+                <tr>
+                    <td>Ingresa tu estado civil:</td>
+                    <td>
+                        <select name="edo_civil">
+                            <option value="casado">Casado/a</option>
+                            <option value="soltero">Soltero/a</option>
+                            <option value="divorciado">Divorciado/a</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Contraseña -->
+                <tr>
+                    <td>Ingresa tu contraseña:</td>
+                    <td><input type="password" name="contrasena"></td>
+                </tr>
+
+                <!-- Comentarios -->
+                <tr>
+                    <td>¿Algún comentario?</td>
+                    <td><textarea name="comentarios"></textarea></td>
+                </tr>
+
+                <!-- Botón para enviar -->
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Enviar datos">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+    </center>
+
+</body>
+
+</html>

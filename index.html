@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio académico de Diana Paola Nava Gutiérrez.">
+  <title>Diana Paola | Portafolio personal</title>
+  <!-- Aquí conecté los estilos de mi página principal. -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Este encabezado contiene mi nombre y el menú para cambiar de apartado. -->
+  <header class="encabezado">
+    <a class="marca" href="#inicio" data-vista="inicio" aria-label="Ir a inicio"><span class="monograma">DP.</span><span>Diana Paola<small>PORTAFOLIO PERSONAL</small></span></a>
+    <button class="menu-boton" id="menu-boton" aria-expanded="false" aria-controls="navegacion" aria-label="Abrir menú">☰</button>
+    <nav class="navegacion" id="navegacion" aria-label="Menú principal">
+      <a href="#inicio" data-vista="inicio" class="activo">Inicio</a>
+      <a href="#acerca" data-vista="acerca">Acerca de mí</a>
+      <a href="#portafolio" data-vista="portafolio">Portafolio</a>
+      <a href="#contacto" data-vista="contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- Esta es mi portada. Las otras secciones no se muestran al mismo tiempo. -->
+    <section id="inicio" class="vista activa" aria-labelledby="titulo-inicio">
+      <div class="presentacion">
+        <div class="texto-inicio"><p class="etiqueta">BIENVENIDO A MI ESPACIO</p><h1 id="titulo-inicio">Hola, soy <span>Diana Paola</span> Nava Gutiérrez.</h1>
+          <p>Estudiante de Ingeniería en Sistemas Computacionales en el TecNM Campus Acapulco.</p>
+          <p class="texto-suave">Este es un espacio para compartir mi aprendizaje y las prácticas que he realizado en Programación Web.</p>
+          <a href="#portafolio" data-vista="portafolio" class="boton">Explorar mi portafolio <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="marco-foto"><img src="assets/foto-inicio.jpg" alt="Retrato de Diana Paola con blazer rosa"></div>
+      </div>
+    </section>
+
+    <!-- En este apartado escribí una presentación breve sobre mí. -->
+    <section id="acerca" class="vista" aria-labelledby="titulo-acerca" hidden>
+      <div class="acerca-contenido"><div class="marco-foto foto-secundaria"><img src="assets/foto-acerca.jpg" alt="Retrato de Diana Paola con camisa blanca"></div>
+        <div><p class="etiqueta">UN POCO SOBRE MÍ</p><h2 id="titulo-acerca">Acerca de mí</h2>
+          <p>Soy Diana Paola Nava Gutiérrez, estudiante de Ingeniería en Sistemas Computacionales en el TecNM Campus Acapulco.</p>
+          <p>Me interesa seguir aprendiendo sobre desarrollo web, bases de datos y tecnología. Disfruto desarrollar mis habilidades mediante actividades prácticas y nuevos retos académicos.</p>
+          <p class="texto-suave">Este portafolio reúne algunas de las evidencias de mi formación en Programación Web.</p>
+        </div></div>
+    </section>
+
+    <!-- Aquí agregué un iframe para visualizar mis prácticas dentro del portafolio. -->
+    <section id="portafolio" class="vista" aria-labelledby="titulo-portafolio" hidden>
+      <div class="cabecera-seccion"><p class="etiqueta">MIS TRABAJOS</p><h2 id="titulo-portafolio">Portafolio de evidencias</h2><p>Selecciona una práctica para verla sin salir de mi página.</p></div>
+      <div class="portafolio-contenido">
+        <div class="selector-practicas" aria-label="Seleccionar práctica">
+          <button class="practica-boton seleccionado" data-practica="1" aria-pressed="true">Práctica 1</button>
+          <button class="practica-boton" data-practica="2" aria-pressed="false">Práctica 2</button>
+          <button class="practica-boton" data-practica="3" aria-pressed="false">Práctica 3</button>
+          <button class="practica-boton" data-practica="4" aria-pressed="false">Práctica 4</button>
+          <button class="practica-boton" data-practica="5" aria-pressed="false">Práctica 5</button>
+          <button class="practica-boton" data-practica="7" aria-pressed="false">Práctica 7</button>
+        </div>
+        <div class="visor-contenedor"><div class="visor-cabecera"><h3 id="nombre-practica">Práctica 1</h3><a id="abrir-practica" href="practicas/practica-1.html" target="_blank" rel="noopener noreferrer">Abrir en otra pestaña ↗</a></div>
+          <iframe id="visor" title="Vista previa de la práctica seleccionada" src="practicas/practica-1.html" loading="lazy"></iframe>
+          <p class="nota-visor">Puedes desplazarte dentro de la vista previa. Algunas prácticas se diseñaron originalmente para pantallas de computadora.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estos son los medios por los que pueden ponerse en contacto conmigo. -->
+    <section id="contacto" class="vista" aria-labelledby="titulo-contacto" hidden>
+      <div class="contacto-contenido"><p class="etiqueta">HABLEMOS</p><h2 id="titulo-contacto">Contacto</h2>
+        <p>Si deseas comunicarte conmigo, puedes utilizar alguno de los siguientes medios.</p>
+        <div class="contacto-enlaces">
+          <a href="mailto:L23320948@acapulco.tecnm.mx"><span>Correo electrónico</span><strong>L23320948@acapulco.tecnm.mx</strong></a>
+          <a href="tel:+525658732907"><span>Teléfono</span><strong>565 873 2907</strong></a>
+          <a href="https://www.instagram.com/_ppptz/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><strong>@_ppptz ↗</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Este pie de página aparece al final de cada apartado. -->
+  <footer class="pie"><span>© 2026 Diana Paola Nava Gutiérrez</span><span>Programación Web · TecNM Campus Acapulco</span></footer>
+  <!-- Aquí enlacé el archivo que controla el menú y las prácticas. -->
+  <script src="funciones.js"></script>
+</body>
+</html>

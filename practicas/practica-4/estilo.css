@@ -1,0 +1,126 @@
+/* NOMBRE: NAVA GUTIERREZ DIANA PAOLA */
+/* ELABORADO: 02 DE OCTUBRE DE 2026 */
+
+
+/* Cambia el estilo del título principal */
+h3 {
+    /* Color del texto */
+    color: #5c3a46;
+    /* Tamaño del título */
+    font-size: 45px;
+    /* Tipo de letra */
+    font-family: "Libre Caslon Condensed", serif;
+    /* Espacio inferior */
+    margin-bottom: 5px;
+}
+
+
+/* Cambia el estilo del título de reservaciones */
+h2 {
+    /* Color del texto */
+    color: #5c3a46;
+    /* Tamaño del texto */
+    font-size: 35px;
+    /* Borde rosa */
+    border: 3px solid #d8a7b1;
+    /* Fondo rosa pastel */
+    background-color: #f8dfe5;
+    /* Espacio interior */
+    padding: 10px;
+    /* Redondea las esquinas */
+    border-radius: 10px;
+    /* Ancho del título */
+    width: 400px;
+}
+
+
+/* Cambia el estilo del nombre */
+h4 {
+    /* Color del texto */
+    color: #7a5360;
+    /* Tamaño del texto */
+    font-size: 25px;
+    /* Tipo de letra */
+    font-family: "Libre Caslon Condensed", serif;
+}
+
+
+/* Cambia el estilo de la tabla */
+table {
+    /* Fondo claro */
+    background-color: #fffafa;
+    /* Borde rosa */
+    border: 2px solid #d8a7b1;
+    /* Redondea las esquinas */
+    border-radius: 12px;
+    /* Espacio interno */
+    padding: 20px;
+}
+
+
+/* Cambia todos los cuadros principales */
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password] {
+    /* Fondo rosa muy claro */
+    background-color: #fcecef;
+    /* Borde */
+    border: 1px solid #d8a7b1;
+    /* Redondea las esquinas */
+    border-radius: 7px;
+    /* Espacio dentro del campo */
+    padding: 7px;
+}
+
+
+/* Cambia la lista y el área de comentarios */
+select, textarea {
+    /* Fondo crema */
+    background-color: #fff4f1;
+    /* Borde rosa */
+    border: 1px solid #d8a7b1;
+    /* Redondea las esquinas */
+    border-radius: 7px;
+    /* Espacio interior */
+    padding: 7px;
+}
+
+
+/* Cambia el botón de enviar */
+input[type=submit] {
+    /* Fondo rosa pastel */
+    background-color: #e8b8c3;
+    /* Color del texto */
+    color: #4d3039;
+    /* Quita el borde normal */
+    border: none;
+    /* Redondea el botón */
+    border-radius: 8px;
+    /* Espacio interior */
+    padding: 10px 25px;
+    /* Tamaño de letra */
+    font-size: 16px;
+    /* Cambia el cursor al pasar encima */
+    cursor: pointer;
+}
+
+
+    /* Cambia el botón cuando pasamos el mouse */
+    input[type=submit]:hover {
+        /* Rosa un poco más fuerte */
+        background-color: #d99aaa;
+    }
+
+
+/* Cambia el estilo de toda la página */
+body {
+    /* Fondo rosa muy claro */
+    background-color: #fff7f8;
+    /* Color general del texto */
+    color: #4d3b40;
+    /* Tamaño del texto */
+    font-size: 17px;
+    /* Tipo de letra */
+    font-family: "Libre Caslon Condensed", serif;
+}
