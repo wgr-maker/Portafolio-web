@@ -19,3 +19,19 @@ main{flex:1;width:100%;max-width:var(--ancho);margin:auto;padding:38px 24px 48px
 @media(max-width:760px){.encabezado{padding:15px 22px}.menu-boton{display:block}.navegacion{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;box-shadow:0 12px 22px #0000000b;padding:12px 20px;flex-direction:column;align-items:stretch}.navegacion.abierto{display:flex}main{padding:36px 24px;align-items:flex-start}.presentacion{grid-template-columns:1fr;gap:38px}.marco-foto{max-width:300px}.marco-foto img{height:350px}.acerca-contenido{grid-template-columns:1fr;gap:35px}.foto-secundaria{max-width:250px}.foto-secundaria img{height:310px}.portafolio-contenido{grid-template-columns:1fr}.selector-practicas{flex-direction:row;flex-wrap:wrap}.practica-boton{padding:11px 13px;font-size:13px}iframe{height:430px}.pie{flex-direction:column;align-items:center;text-align:center}.contacto-enlaces a{align-items:flex-start;flex-direction:column;gap:6px}}
 @media(max-width:430px){.marca{font-size:16px}.monograma{width:40px;height:40px}h1{font-size:40px}.visor-cabecera{flex-direction:column;align-items:flex-start}iframe{height:390px}.contacto-contenido p{font-size:15px}}
 @media(max-height:480px) and (orientation:landscape){main{padding-top:22px;padding-bottom:24px}.presentacion{min-height:0}.marco-foto img{height:280px}}
+
+/* Diseñé el formulario con el mismo estilo sencillo de mi portafolio. */
+.ayuda-formulario {max-width:720px; margin:36px auto 0; padding:28px; background:#fff; border:1px solid #f0dfe3; border-radius:18px; box-shadow:0 10px 32px rgba(76,50,60,.04)}
+.ayuda-formulario h3 {margin:0 0 8px; font-size:1.4rem}
+.ayuda-formulario > p {color:#6c6367; margin:0 0 20px}
+.ayuda-formulario form {display:flex; flex-direction:column; gap:10px}
+.ayuda-campos {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px}
+.ayuda-campos > div {display:flex; flex-direction:column; gap:10px; min-width:0}
+.ayuda-formulario label {font-weight:600; font-size:.92rem; margin-top:6px}
+.ayuda-formulario input:not(.campo-trampa), .ayuda-formulario select, .ayuda-formulario textarea {width:100%; box-sizing:border-box; border:1px solid #e4d9dd; border-radius:10px; padding:12px 14px; font:inherit; background:#fff; color:#343035}
+.ayuda-formulario textarea {resize:vertical; min-height:120px}
+.ayuda-formulario :is(input,select,textarea):focus-visible {outline:2px solid #d9a5b6; outline-offset:2px}
+.ayuda-formulario .boton {align-self:flex-start; border:0; cursor:pointer; font:inherit}
+.ayuda-formulario .aviso-formulario {font-size:.78rem; color:#71696c; margin:3px 0 8px}
+.ayuda-formulario .campo-trampa {position:absolute; left:-9999px; width:1px; height:1px; opacity:0}
+@media(max-width:600px){.ayuda-formulario{padding:20px 16px; margin-top:24px}.ayuda-campos{grid-template-columns:1fr}.ayuda-formulario .boton{width:100%; text-align:center}}

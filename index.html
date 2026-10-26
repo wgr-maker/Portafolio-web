@@ -72,6 +72,34 @@
           <a href="tel:+525658732907"><span>Teléfono</span><strong>565 873 2907</strong></a>
           <a href="https://www.instagram.com/_ppptz/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><strong>@_ppptz ↗</strong></a>
         </div>
+        <!-- Agregué este formulario para recibir solicitudes de ayuda en mi correo institucional. -->
+        <div class="ayuda-formulario">
+          <h3>Formulario de ayuda</h3>
+          <p>¿Tienes alguna duda o sugerencia? Escríbeme y recibiré tu mensaje por correo.</p>
+          <!-- FormSubmit procesa los mensajes porque GitHub Pages no tiene servidor de correo. -->
+          <form action="https://formsubmit.co/L23320948@acapulco.tecnm.mx" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo mensaje de ayuda desde mi portafolio">
+            <input type="hidden" name="_template" value="table">
+            <!-- Este campo oculto ayuda a reducir mensajes automáticos. -->
+            <input type="text" name="_honey" class="campo-trampa" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="ayuda-campos">
+              <div><label for="ayuda-nombre">Nombre completo</label><input id="ayuda-nombre" name="name" type="text" maxlength="100" autocomplete="name" required placeholder="Tu nombre"></div>
+              <div><label for="ayuda-email">Correo electrónico</label><input id="ayuda-email" name="email" type="email" maxlength="150" autocomplete="email" required placeholder="tunombre@correo.com"></div>
+            </div>
+            <label for="ayuda-asunto">Asunto</label>
+            <select id="ayuda-asunto" name="asunto" required>
+              <option value="" disabled selected>Selecciona un asunto</option>
+              <option value="Consulta general">Consulta general</option>
+              <option value="Ayuda con una práctica">Ayuda con una práctica</option>
+              <option value="Sugerencia">Sugerencia</option>
+              <option value="Otro">Otro</option>
+            </select>
+            <label for="ayuda-mensaje">Mensaje</label>
+            <textarea id="ayuda-mensaje" name="message" rows="5" maxlength="3000" required placeholder="Escribe aquí tu mensaje..."></textarea>
+            <p class="aviso-formulario">Al enviar, tus datos se compartirán con FormSubmit para entregar el mensaje a mi correo.</p>
+            <button type="submit" class="boton">Enviar mensaje →</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
